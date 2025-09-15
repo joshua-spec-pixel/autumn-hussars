@@ -191,7 +191,7 @@ class MainApp(tk.Tk):
         btn_frame = tk.Frame(main_frame, bg="#d5cfc5")
         btn_frame.pack(pady=25)
         tk.Button(btn_frame, text="Campaign Journal", command=self.open_notes, font=("Georgia", 12), bg="#b4a078").pack(pady=10, fill=tk.X)
-        tk.Button(btn_frame, text="Sieze The Day", command=self.open_pomodoro, font=("Georgia", 12), bg="#b4a078").pack(pady=10, fill=tk.X)
+        tk.Button(btn_frame, text="Seize The Day", command=self.open_pomodoro, font=("Georgia", 12), bg="#b4a078").pack(pady=10, fill=tk.X)
 
 
         # After you set up your main window (for example, in MainApp.__init__):
@@ -208,6 +208,7 @@ class MainApp(tk.Tk):
 if __name__ == "__main__":
     app = MainApp()
     app.mainloop()
+
 
 
 
