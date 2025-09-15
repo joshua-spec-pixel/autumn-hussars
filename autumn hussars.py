@@ -14,7 +14,7 @@ QUEEN = "\u265B"   # Black Queen
 class NoteWindow(tk.Toplevel):
     def __init__(self, master=None):
         super().__init__(master)
-        self.title("Varangian Journal - Notes")
+        self.title("Autumn Journal - Notes")
         self.configure(bg="#f7f6ed")
         self.geometry("600x600")
         self.resizable(False, False)
@@ -73,7 +73,7 @@ class NoteWindow(tk.Toplevel):
 class PomodoroWindow(tk.Toplevel):
     def __init__(self, master=None):
         super().__init__(master)
-        self.title("The Varangian Chess Timer")
+        self.title("The Hussar-Chess Timer")
         self.configure(bg="#f7f6ed")
         self.geometry("500x420")
         self.resizable(False, False)
@@ -162,7 +162,7 @@ class PomodoroWindow(tk.Toplevel):
 class MainApp(tk.Tk):
     def __init__(self):
         super().__init__()
-        self.title("Varangian Hall - Autumn Chess Journal")
+        self.title("Hall Of Hussars - Autumn Chess")
         self.geometry("500x280")
         self.configure(bg="#d5cfc5")
         self.resizable(False, False)
@@ -203,3 +203,4 @@ class MainApp(tk.Tk):
 if __name__ == "__main__":
     app = MainApp()
     app.mainloop()
+
