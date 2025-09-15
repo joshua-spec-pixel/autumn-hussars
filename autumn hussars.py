@@ -94,7 +94,7 @@ class PomodoroWindow(tk.Toplevel):
         timer_frame.place(relx=0.35, rely=0, relwidth=0.65, relheight=0.8)
 
         tk.Label(timer_frame, text="Autumn Grind Timer", font=("Times New Roman", 20, "bold"), fg="#1c2d3a", bg="#f7f6ed").pack(pady=(12,2))
-        tk.Label(timer_frame, text="The chivalric wings of a hussar\nbrings tranquil of the autumn.", font=("Times New Roman", 14), fg="#735f35", bg="#f7f6ed").pack()
+        tk.Label(timer_frame, text="The chivalric wings of a hussar\nbring the tranquility of autumn.", font=("Times New Roman", 14), fg="#735f35", bg="#f7f6ed").pack()
 
         self.time_var = tk.StringVar(value="25:00")
         tk.Label(timer_frame, textvariable=self.time_var, font=("Consolas", 36, "bold"), bg="#f7f6ed").pack(pady=14)
@@ -203,4 +203,5 @@ class MainApp(tk.Tk):
 if __name__ == "__main__":
     app = MainApp()
     app.mainloop()
+
 
