@@ -53,6 +53,11 @@ class NoteWindow(tk.Toplevel):
         quote_label = tk.Label(icon_container, text="Guard your heart\n above all else,\nfor it is\nthe source of life.",
                                font=("Monotype Corsiva", 14, "italic"), fg="#6d4c31", bg="#f7f6ed", justify="center")
         quote_label.pack(pady=(10, 0))
+        
+        btn_frame = tk.Frame(right_frame, bg="#f7f6ed")
+        btn_frame.place(relx=0, rely=0.8, relwidth=1, relheight=0.12) # 12% height, below the quote
+        tk.Button(btn_frame, text="Save Note", command=self.save_note, bg="#b4a078", font=("Georgia", 10)).pack(fill=tk.X, padx=8, pady=(0,4))
+        tk.Button(btn_frame, text="Load Note", command=self.load_note, bg="#b4a078", font=("Georgia", 10)).pack(fill=tk.X, padx=8)
 
     def save_note(self):
         file_path = filedialog.asksaveasfilename(defaultextension=".txt", filetypes=[("Text Documents", "*.txt")])
@@ -203,5 +208,6 @@ class MainApp(tk.Tk):
 if __name__ == "__main__":
     app = MainApp()
     app.mainloop()
+
 
 
